@@ -138,28 +138,28 @@
 @layer components {
   /* Professional Button Variants */
   .btn-primary {
-    @apply bg-gradient-to-r from-primary to-primary-light text-primary-foreground hover:from-primary-dark hover:to-primary shadow-elegant transition-smooth;
+    @apply bg-gradient-to-r from-primary to-primary-light text-primary-foreground hover:from-primary-dark hover:to-primary shadow-elegant transition-all duration-300 ease-out;
   }
 
   .btn-accent {
-    @apply bg-gradient-to-r from-accent-dark to-accent text-accent-foreground hover:from-accent hover:to-accent-light shadow-accent transition-smooth;
+    @apply bg-gradient-to-r from-accent-dark to-accent text-accent-foreground hover:from-accent hover:to-accent-light shadow-accent transition-all duration-300 ease-out;
   }
 
   .btn-hero {
-    @apply bg-gradient-to-r from-accent to-accent-light text-accent-foreground hover:from-accent-dark hover:to-accent transform hover:scale-105 shadow-accent transition-spring;
+    @apply bg-gradient-to-r from-accent to-accent-light text-accent-foreground hover:from-accent-dark hover:to-accent transform hover:scale-105 shadow-accent transition-all duration-400 ease-out;
   }
 
   .btn-trust {
-    @apply bg-trust-green text-trust-green-foreground hover:bg-trust-green/90 shadow-card transition-smooth;
+    @apply bg-trust-green text-trust-green-foreground hover:bg-trust-green/90 shadow-card transition-all duration-300 ease-out;
   }
 
   /* Professional Cards */
   .card-elevated {
-    @apply bg-card border border-border shadow-card hover:shadow-elegant transition-smooth;
+    @apply bg-card border border-border shadow-card hover:shadow-elegant transition-all duration-300 ease-out;
   }
 
   .card-feature {
-    @apply bg-gradient-to-br from-card to-secondary border border-border shadow-card hover:shadow-elegant transition-smooth;
+    @apply bg-gradient-to-br from-card to-secondary border border-border shadow-card hover:shadow-elegant transition-all duration-300 ease-out;
   }
 
   /* Professional Text Styles */

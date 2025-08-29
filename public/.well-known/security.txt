@@ -1,0 +1,14 @@
+Contact: mailto:security@bestrefinanceoptions.com
+Contact: https://bestrefinanceoptions.com/contact
+Preferred-Languages: en
+Canonical: https://bestrefinanceoptions.com/.well-known/security.txt
+
+# Security Policy
+We take security seriously and appreciate responsible disclosure of security vulnerabilities.
+
+# Reporting
+Please report security vulnerabilities to security@bestrefinanceoptions.com
+Include steps to reproduce and a detailed description of the issue.
+
+# Acknowledgments
+We thank security researchers who help us maintain a secure platform for our users.

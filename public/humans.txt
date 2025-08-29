@@ -1,0 +1,15 @@
+/* TEAM */
+The humans responsible for bestrefinanceoptions.com
+
+CEO: Best Refinance Options Team
+Location: United States
+
+/* THANKS */
+Built with love for homeowners seeking better refinance options.
+
+/* SITE */
+Domain: bestrefinanceoptions.com
+Language: English
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: React, TypeScript
+Software: Vite, Tailwind CSS
