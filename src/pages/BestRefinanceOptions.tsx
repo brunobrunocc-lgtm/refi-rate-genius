@@ -1,7 +1,6 @@
 import Layout from '@/components/Layout';
 import SEOHead from '@/components/SEOHead';
 import LenderComparison from '@/components/LenderComparison';
-import { HeaderAd, ContentAd } from '@/components/AdSenseUnit';
 import ErrorBoundary from '@/components/ErrorBoundary';
 
 const BestRefinanceOptions = () => {
@@ -27,8 +26,6 @@ const BestRefinanceOptions = () => {
 
       <div className="min-h-screen bg-background">
         <div className="container-page pt-8">
-          <HeaderAd />
-          
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold mb-4">Compare Best Refinance Options</h1>
             <p className="text-xl text-muted-foreground">
@@ -39,8 +36,6 @@ const BestRefinanceOptions = () => {
           <ErrorBoundary>
             <LenderComparison />
           </ErrorBoundary>
-          
-          <ContentAd />
         </div>
       </div>
     </Layout>
