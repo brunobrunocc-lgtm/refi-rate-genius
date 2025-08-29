@@ -323,7 +323,10 @@ const LenderComparison = () => {
                 {/* Actions */}
                 <div className="lg:col-span-1">
                   <div className="space-y-3">
-                    <Button className="w-full btn-trust">
+                    <Button 
+                      className="w-full btn-trust"
+                      onClick={() => window.open(`https://${lender.website}`, '_blank')}
+                    >
                       Get Quote
                       <ExternalLink className="h-4 w-4 ml-2" />
                     </Button>
