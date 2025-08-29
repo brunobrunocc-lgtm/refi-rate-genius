@@ -5,6 +5,10 @@ import ErrorBoundary from '@/components/ErrorBoundary';
 
 const BestRefinanceOptions = () => {
   console.log('BestRefinanceOptions component rendering');
+  console.log('Layout imported:', Layout);
+  console.log('SEOHead imported:', SEOHead);
+  console.log('LenderComparison imported:', LenderComparison);
+  console.log('ErrorBoundary imported:', ErrorBoundary);
   
   const schema = {
     "@context": "https://schema.org",
@@ -31,6 +35,10 @@ const BestRefinanceOptions = () => {
             <p className="text-xl text-muted-foreground">
               Find and compare the best mortgage refinance lenders for your needs.
             </p>
+          </div>
+          
+          <div style={{ padding: '20px', backgroundColor: 'yellow', margin: '10px 0' }}>
+            <p>DEBUG: Page is rendering. If you see this, the basic structure works.</p>
           </div>
           
           <ErrorBoundary>
