@@ -113,6 +113,7 @@ const lendersData: Lender[] = [
 ];
 
 const LenderComparison = () => {
+  console.log('LenderComparison component rendering');
   const [lenders] = useState<Lender[]>(lendersData);
   const [filteredLenders, setFilteredLenders] = useState<Lender[]>(lendersData);
   const [filters, setFilters] = useState({

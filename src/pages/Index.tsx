@@ -6,10 +6,10 @@ import Layout from '@/components/Layout';
 import SEOHead from '@/components/SEOHead';
 import { HeaderAd, ContentAd } from '@/components/AdSenseUnit';
 import { Calculator, TrendingDown, Shield, Clock, Star, ArrowRight, CheckCircle } from 'lucide-react';
-import { getCurrentDomain, getCanonicalUrl } from '@/lib/domain';
 import heroImage from '@/assets/hero-image.jpg';
 
 const Index = () => {
+  console.log('Index page rendering');
   const currentRates = [
     { term: '30-Year Fixed', rate: '7.125%', apr: '7.285%', change: '-0.125%' },
     { term: '15-Year Fixed', rate: '6.750%', apr: '6.875%', change: '-0.100%' },
@@ -66,7 +66,7 @@ const Index = () => {
     "@type": "WebPage",
     "name": "Best Refinance Options - Compare Top Mortgage Refinance Rates 2025",
     "description": "Find the best mortgage refinance options with our comprehensive rate comparison tool and expert guides. Compare top lenders, calculate savings, and secure the lowest refinance rates in 2025.",
-    "url": getCanonicalUrl("/"),
+    "url": "https://refi-rate-genius.lovable.app/",
     "mainEntity": {
       "@type": "FAQPage",
       "mainEntity": [
@@ -95,7 +95,7 @@ const Index = () => {
       <SEOHead
         title="Best Refinance Options - Compare Top Mortgage Refinance Rates 2025"
         description="Find the best mortgage refinance options with our comprehensive rate comparison tool and expert guides. Compare top lenders, calculate savings, and secure the lowest refinance rates in 2025."
-        canonical={getCanonicalUrl("/")}
+        canonical="https://refi-rate-genius.lovable.app/"
         keywords="mortgage refinance, refinance rates, best refinance options, mortgage rates, refinance calculator, home loan refinancing"
         schema={schema}
       />
