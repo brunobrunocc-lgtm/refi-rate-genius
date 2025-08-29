@@ -1,7 +1,8 @@
 import Layout from '@/components/Layout';
 import SEOHead from '@/components/SEOHead';
-import LenderComparison from '@/components/LenderComparison';
 import ErrorBoundary from '@/components/ErrorBoundary';
+import { Suspense, lazy } from 'react';
+const LenderComparison = lazy(() => import('@/components/LenderComparison'));
 
 const BestRefinanceOptions = () => {
   const schema = {
@@ -32,7 +33,9 @@ const BestRefinanceOptions = () => {
           </div>
           
           <ErrorBoundary>
-            <LenderComparison />
+            <Suspense fallback={<div className="container-page py-8"><div className="text-center text-muted-foreground">Loading lender comparison...</div></div>}>
+              <LenderComparison />
+            </Suspense>
           </ErrorBoundary>
         </div>
       </div>
