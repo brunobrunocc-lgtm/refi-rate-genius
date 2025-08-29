@@ -209,12 +209,12 @@ const LenderComparison = () => {
             </div>
             <div>
               <label className="block text-sm font-medium mb-1">Specialty</label>
-              <Select value={filters.specialty} onValueChange={(value) => setFilters({...filters, specialty: value})}>
+              <Select value={filters.specialty} onValueChange={(value) => setFilters({...filters, specialty: value === 'any' ? '' : value})}>
                 <SelectTrigger>
                   <SelectValue placeholder="Any" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Any</SelectItem>
+                  <SelectItem value="any">Any</SelectItem>
                   <SelectItem value="first-time">First-time buyers</SelectItem>
                   <SelectItem value="online">Online process</SelectItem>
                   <SelectItem value="low fees">Low fees</SelectItem>
