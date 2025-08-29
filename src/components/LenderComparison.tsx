@@ -217,7 +217,7 @@ const LenderComparison = () => {
                   <SelectItem value="">Any</SelectItem>
                   <SelectItem value="first-time">First-time buyers</SelectItem>
                   <SelectItem value="online">Online process</SelectItem>
-                  <SelectItem value="low fees">Low fees</SelectItem>
+                  <SelectItem value="low-fees">Low fees</SelectItem>
                   <SelectItem value="fha">FHA loans</SelectItem>
                 </SelectContent>
               </Select>

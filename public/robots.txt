@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://bestrefinanceoptions.com/sitemap.xml
+Sitemap: https://refi-rate-genius.lovable.app/sitemap.xml
 
 # Block specific paths if needed
 # Disallow: /admin/
