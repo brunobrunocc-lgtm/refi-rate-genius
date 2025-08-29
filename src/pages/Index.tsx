@@ -6,6 +6,7 @@ import Layout from '@/components/Layout';
 import SEOHead from '@/components/SEOHead';
 import { HeaderAd, ContentAd } from '@/components/AdSenseUnit';
 import { Calculator, TrendingDown, Shield, Clock, Star, ArrowRight, CheckCircle } from 'lucide-react';
+import { getCurrentDomain, getCanonicalUrl } from '@/lib/domain';
 import heroImage from '@/assets/hero-image.jpg';
 
 const Index = () => {
@@ -65,7 +66,7 @@ const Index = () => {
     "@type": "WebPage",
     "name": "Best Refinance Options - Compare Top Mortgage Refinance Rates 2025",
     "description": "Find the best mortgage refinance options with our comprehensive rate comparison tool and expert guides. Compare top lenders, calculate savings, and secure the lowest refinance rates in 2025.",
-    "url": "https://bestrefinanceoptions.com/",
+    "url": getCanonicalUrl("/"),
     "mainEntity": {
       "@type": "FAQPage",
       "mainEntity": [
@@ -94,7 +95,7 @@ const Index = () => {
       <SEOHead
         title="Best Refinance Options - Compare Top Mortgage Refinance Rates 2025"
         description="Find the best mortgage refinance options with our comprehensive rate comparison tool and expert guides. Compare top lenders, calculate savings, and secure the lowest refinance rates in 2025."
-        canonical="https://bestrefinanceoptions.com/"
+        canonical={getCanonicalUrl("/")}
         keywords="mortgage refinance, refinance rates, best refinance options, mortgage rates, refinance calculator, home loan refinancing"
         schema={schema}
       />

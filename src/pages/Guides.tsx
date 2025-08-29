@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { HeaderAd, ContentAd } from '@/components/AdSenseUnit';
 import { Clock, ArrowRight, BookOpen, TrendingUp } from 'lucide-react';
+import { getCanonicalUrl } from '@/lib/domain';
 
 const Guides = () => {
   const guides = [
@@ -160,7 +161,7 @@ const Guides = () => {
     "@type": "CollectionPage",
     "name": "Mortgage Refinance Guides - Expert Education and Tips",
     "description": "Comprehensive mortgage refinance guides written by industry experts. Learn about rates, lenders, qualification, and the refinance process.",
-    "url": "https://bestrefinanceoptions.com/guides",
+    "url": getCanonicalUrl("/guides"),
     "mainEntity": {
       "@type": "ItemList",
       "itemListElement": guides.map((guide, index) => ({
@@ -168,7 +169,7 @@ const Guides = () => {
         "position": index + 1,
         "name": guide.title,
         "description": guide.description,
-        "url": `https://bestrefinanceoptions.com/guides/${guide.slug}`
+        "url": `${getCanonicalUrl("/guides")}/${guide.slug}`
       }))
     }
   };
@@ -178,7 +179,7 @@ const Guides = () => {
       <SEOHead
         title="Mortgage Refinance Guides - Expert Education and Tips"
         description="Comprehensive mortgage refinance guides written by industry experts. Learn about rates, lenders, qualification, and the refinance process."
-        canonical="https://bestrefinanceoptions.com/guides"
+        canonical={getCanonicalUrl("/guides")}
         keywords="mortgage refinance guides, refinance tips, mortgage education, refinance process"
         schema={schema}
       />

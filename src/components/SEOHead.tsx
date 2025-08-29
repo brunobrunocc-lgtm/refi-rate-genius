@@ -67,7 +67,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
     updateOGTag('og:title', title);
     updateOGTag('og:description', description);
     updateOGTag('og:type', ogType);
-    updateOGTag('og:image', `https://bestrefinanceoptions.com${ogImage}`);
+    updateOGTag('og:image', `${window.location.origin}${ogImage}`);
     if (canonical) {
       updateOGTag('og:url', canonical);
     }
@@ -85,7 +85,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
 
     updateTwitterTag('twitter:title', title);
     updateTwitterTag('twitter:description', description);
-    updateTwitterTag('twitter:image', `https://bestrefinanceoptions.com${ogImage}`);
+    updateTwitterTag('twitter:image', `${window.location.origin}${ogImage}`);
 
     // Add robots meta tag
     let robotsTag = document.querySelector('meta[name="robots"]');

@@ -2,6 +2,7 @@ import Layout from '@/components/Layout';
 import SEOHead from '@/components/SEOHead';
 import LenderComparison from '@/components/LenderComparison';
 import { HeaderAd, ContentAd } from '@/components/AdSenseUnit';
+import { getCanonicalUrl } from '@/lib/domain';
 
 const BestRefinanceOptions = () => {
   const schema = {
@@ -9,7 +10,7 @@ const BestRefinanceOptions = () => {
     "@type": "WebPage",
     "name": "Best Refinance Options - Compare Top Mortgage Lenders 2025",
     "description": "Compare the best mortgage refinance lenders, rates, and terms. Find the perfect refinance option with our comprehensive lender comparison tool.",
-    "url": "https://bestrefinanceoptions.com/best-refinance-options"
+    "url": getCanonicalUrl("/best-refinance-options")
   };
 
   return (
@@ -17,7 +18,7 @@ const BestRefinanceOptions = () => {
       <SEOHead
         title="Best Refinance Options - Compare Top Mortgage Lenders 2025"
         description="Compare the best mortgage refinance lenders, rates, and terms. Find the perfect refinance option with our comprehensive lender comparison tool."
-        canonical="https://bestrefinanceoptions.com/best-refinance-options"
+        canonical={getCanonicalUrl("/best-refinance-options")}
         keywords="best refinance lenders, mortgage refinance comparison, refinance rates, top mortgage lenders"
         schema={schema}
       />

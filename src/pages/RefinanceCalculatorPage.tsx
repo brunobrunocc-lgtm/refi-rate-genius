@@ -2,6 +2,7 @@ import Layout from '@/components/Layout';
 import SEOHead from '@/components/SEOHead';
 import RefinanceCalculator from '@/components/RefinanceCalculator';
 import { HeaderAd, ContentAd } from '@/components/AdSenseUnit';
+import { getCanonicalUrl } from '@/lib/domain';
 
 const RefinanceCalculatorPage = () => {
   const schema = {
@@ -9,7 +10,7 @@ const RefinanceCalculatorPage = () => {
     "@type": ["WebPage", "SoftwareApplication"],
     "name": "Mortgage Refinance Calculator - Calculate Your Savings",
     "description": "Free refinance calculator to estimate monthly payment savings, break-even point, and total interest savings. Calculate if refinancing makes sense for you.",
-    "url": "https://bestrefinanceoptions.com/refinance-calculator",
+    "url": getCanonicalUrl("/refinance-calculator"),
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web Browser",
     "offers": {
@@ -30,7 +31,7 @@ const RefinanceCalculatorPage = () => {
       <SEOHead
         title="Mortgage Refinance Calculator - Calculate Your Savings"
         description="Free refinance calculator to estimate monthly payment savings, break-even point, and total interest savings. Calculate if refinancing makes sense for you."
-        canonical="https://bestrefinanceoptions.com/refinance-calculator"
+        canonical={getCanonicalUrl("/refinance-calculator")}
         keywords="refinance calculator, mortgage calculator, refinance savings calculator, loan payment calculator"
         schema={schema}
       />
