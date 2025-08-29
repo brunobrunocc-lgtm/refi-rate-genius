@@ -52,7 +52,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   {item.name}
                 </Link>
               ))}
-              <Button variant="default" className="btn-primary">
+              <Button 
+                variant="default" 
+                className="btn-primary"
+                onClick={() => window.location.href = '/refinance-calculator'}
+              >
                 Get Started
               </Button>
             </nav>
@@ -89,7 +93,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     {item.name}
                   </Link>
                 ))}
-                <Button variant="default" className="btn-primary w-fit mt-4">
+                <Button 
+                  variant="default" 
+                  className="btn-primary w-fit mt-4"
+                  onClick={() => window.location.href = '/refinance-calculator'}
+                >
                   Get Started
                 </Button>
               </nav>
