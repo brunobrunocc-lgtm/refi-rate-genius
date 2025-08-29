@@ -2,6 +2,7 @@ import Layout from '@/components/Layout';
 import SEOHead from '@/components/SEOHead';
 import LenderComparison from '@/components/LenderComparison';
 import { HeaderAd, ContentAd } from '@/components/AdSenseUnit';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
 const BestRefinanceOptions = () => {
   console.log('BestRefinanceOptions component rendering');
@@ -35,7 +36,9 @@ const BestRefinanceOptions = () => {
             </p>
           </div>
           
-          <LenderComparison />
+          <ErrorBoundary>
+            <LenderComparison />
+          </ErrorBoundary>
           
           <ContentAd />
         </div>
