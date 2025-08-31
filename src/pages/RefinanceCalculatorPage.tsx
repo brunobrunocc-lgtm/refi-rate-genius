@@ -2,6 +2,8 @@ import Layout from '@/components/Layout';
 import SEOHead from '@/components/SEOHead';
 import RefinanceCalculator from '@/components/RefinanceCalculator';
 import { HeaderAd, ContentAd } from '@/components/AdSenseUnit';
+import LeaderboardAd from '@/components/LeaderboardAd';
+import StickyFooterAd from '@/components/StickyFooterAd';
 
 
 const RefinanceCalculatorPage = () => {
@@ -38,6 +40,8 @@ const RefinanceCalculatorPage = () => {
       />
 
       <div className="min-h-screen bg-background">
+        <LeaderboardAd />
+        
         <div className="container-page section-padding">
           <HeaderAd />
           
@@ -45,6 +49,8 @@ const RefinanceCalculatorPage = () => {
           
           <ContentAd />
         </div>
+        
+        <StickyFooterAd />
       </div>
     </Layout>
   );

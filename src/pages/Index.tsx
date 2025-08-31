@@ -4,7 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Layout from '@/components/Layout';
 import SEOHead from '@/components/SEOHead';
+import MortgageFAQ from '@/components/MortgageFAQ';
 import { HeaderAd, ContentAd } from '@/components/AdSenseUnit';
+import LeaderboardAd from '@/components/LeaderboardAd';
+import StickyFooterAd from '@/components/StickyFooterAd';
 import { Calculator, TrendingDown, Shield, Clock, Star, ArrowRight, CheckCircle } from 'lucide-react';
 import heroImage from '@/assets/hero-image.jpg';
 
@@ -100,6 +103,8 @@ const Index = () => {
         schema={schema}
       />
 
+      <LeaderboardAd />
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-hero text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
@@ -347,6 +352,13 @@ const Index = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="section-padding">
+        <div className="container-page">
+          <MortgageFAQ />
+        </div>
+      </section>
+
       {/* Trust Section */}
       <section className="section-padding bg-primary text-primary-foreground">
         <div className="container-page text-center">
@@ -369,7 +381,7 @@ const Index = () => {
 
           <blockquote className="max-w-3xl mx-auto">
             <p className="text-xl italic mb-4">
-              "Best Refinance Options helped me find a lender that saved me $385 per month. 
+              "Best Refinance Options helped me find a lender that saved me $385 &#8203;``【oaicite:0】``&#8203;per month. 
               The comparison tool made it easy to see all my options in one place."
             </p>
             <footer className="text-primary-foreground/80">
@@ -378,6 +390,8 @@ const Index = () => {
           </blockquote>
         </div>
       </section>
+      
+      <StickyFooterAd />
     </Layout>
   );
 };

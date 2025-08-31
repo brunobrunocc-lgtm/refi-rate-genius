@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Star, Filter, ExternalLink, Shield, Clock, DollarSign } from 'lucide-react';
+import AdSenseUnit from '@/components/AdSenseUnit';
 
 interface Lender {
   id: number;
@@ -232,8 +233,9 @@ const LenderComparison = () => {
 
       {/* Lender Cards */}
       <div className="space-y-4">
-        {filteredLenders.map((lender) => (
-          <Card key={lender.id} className={`card-elevated ${lender.featured ? 'ring-2 ring-accent' : ''}`}>
+        {filteredLenders.map((lender, index) => (
+          <div key={lender.id}>
+            <Card className={`card-elevated ${lender.featured ? 'ring-2 ring-accent' : ''}`}>
             <CardContent className="p-6">
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
                 {/* Lender Info */}
@@ -372,7 +374,20 @@ const LenderComparison = () => {
                 </div>
               </div>
             </CardContent>
-          </Card>
+            </Card>
+            
+            {/* Inline Ad after every 3rd lender */}
+            {(index + 1) % 3 === 0 && index < filteredLenders.length - 1 && (
+              <div className="my-8">
+                <div className="text-center text-xs text-muted-foreground mb-2">Advertisement</div>
+                <AdSenseUnit
+                  slot="7890123456"
+                  className="text-center"
+                  style={{ minHeight: '250px' }}
+                />
+              </div>
+            )}
+          </div>
         ))}
       </div>
 

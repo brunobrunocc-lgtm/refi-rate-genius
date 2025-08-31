@@ -2,6 +2,8 @@ import Layout from '@/components/Layout';
 import SEOHead from '@/components/SEOHead';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import { Suspense, lazy } from 'react';
+import LeaderboardAd from '@/components/LeaderboardAd';
+import StickyFooterAd from '@/components/StickyFooterAd';
 const LenderComparison = lazy(() => import('@/components/LenderComparison'));
 
 const BestRefinanceOptions = () => {
@@ -24,6 +26,8 @@ const BestRefinanceOptions = () => {
       />
 
       <div className="min-h-screen bg-background">
+        <LeaderboardAd />
+        
         <div className="container-page pt-8">
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold mb-4">Compare Best Refinance Options</h1>
@@ -38,6 +42,8 @@ const BestRefinanceOptions = () => {
             </Suspense>
           </ErrorBoundary>
         </div>
+        
+        <StickyFooterAd />
       </div>
     </Layout>
   );
